@@ -1,0 +1,28 @@
+!!! 5
+%body
+  %header
+    %h1 Hello!
+  %section
+    %div#texty text goes here
+    %p a paragraph
+    %img{src: "https://archive.org/download/AliciasShoes/alicias_shoes.jpg", alt: "alicia's shoes"}
+    %button.btn.btn-primary
+    #classidgoeshere
+    %input(:type = "text", :placeholder = "wa wa wa")
+
+    / this is a comment
+
+    -# comment that won't be in precomiler output
+
+    .author
+      = @author
+      \= @author
+
+    %p
+      Shay is
+      = succeed "." do
+        %a{:href => "#"} awesome
+ 
+    /
+      %div commented block
+
