@@ -1,0 +1,56 @@
+!!! 5
+
+- if (items)
+  %ul
+    - for (var i = 0; i < items.length; ++i)
+      %li= items[i]
+
+
+%div text
+
+
+- if (items)
+  %ul
+    - each item in items
+      %li= item
+
+%div.article.first
+  article text here
+  and here
+
+.comment hey
+
+#article-1 foo
+
+
+.article#first.summary content
+
+%a{ href: 'http://google.com', title: 'Google It' } Google
+
+%label{ for: 'something' }
+
+%input{ type: 'checkbox', checked: true }
+
+
+- a = 1
+- b = 2
+= a + b
+
+= "<br/>"
+
+%ul
+  - each item, index in items
+    %li= item + '(' + index + ')'
+
+
+%div Hello #{world}
+
+%script
+  :cdata
+    foo
+
+%head
+  :javascript
+    if (foo)
+      if (bar)
+        alert('baz')
